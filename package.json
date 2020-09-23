@@ -1,7 +1,6 @@
 {
   "name": "e-commerce",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
@@ -22,5 +21,16 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
     "uuid": "^8.3.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravkumar34/eCommerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gauravkumar34/eCommerce/issues"
+  },
+  "homepage": "https://github.com/gauravkumar34/eCommerce#readme",
+  "keywords": [],
+  "description": ""
 }
