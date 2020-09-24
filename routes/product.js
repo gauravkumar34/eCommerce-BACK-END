@@ -8,6 +8,10 @@ const {
   read,
   remove,
   update,
+  list,
+  listRelated,
+  listCategory,
+  listBySearch,
 } = require("../controllers/product");
 const { userById } = require("../controllers/user");
 // const { remove } = require("../models/user");
@@ -29,6 +33,11 @@ router.put(
   isAdmin,
   update
 );
+
+router.get("/products", list);
+router.get("/products/related/:productId", listRelated);
+router.get("/products/categories", listCategory);
+router.post("/products/by/search", listBySearch);
 
 router.param("userId", userById);
 router.param("productId", productById);
