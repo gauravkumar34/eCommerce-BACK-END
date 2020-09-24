@@ -12,6 +12,7 @@ const {
   listRelated,
   listCategory,
   listBySearch,
+  photo,
 } = require("../controllers/product");
 const { userById } = require("../controllers/user");
 // const { remove } = require("../models/user");
@@ -38,6 +39,7 @@ router.get("/products", list);
 router.get("/products/related/:productId", listRelated);
 router.get("/products/categories", listCategory);
 router.post("/products/by/search", listBySearch);
+router.get("/product/photo/:productId", photo);
 
 router.param("userId", userById);
 router.param("productId", productById);
